@@ -1,0 +1,309 @@
+.task-page-header {
+  justify-content: start;
+}
+
+.add-new-tasks {
+  position: absolute;
+  right: 0rem;
+}
+
+.swicth-task-oparation {
+  display: flex;
+  align-items: center;
+}
+
+.submision-table-header {
+  padding-left: 0.7rem;
+  margin-top: 1rem;
+}
+
+.submision-table-header,
+.drop-down-filter,
+.number-of-submisions {
+  display: flex;
+  align-items: center;
+}
+
+.submision-table-back-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-right: 2rem;
+}
+
+.submision-table-back-btn img,
+.drop-down-filter img,
+.number-of-submisions img {
+  width: 1.3rem;
+  height: 1.3rem;
+}
+
+.number-of-submisions img {
+  margin-right: 1rem;
+}
+
+.number-of-submisions span,
+.number-of-submisions p {
+  font-size: 0.8rem;
+  color: var(--cream-white-text);
+}
+
+.submision-table-back-btn:hover {
+  opacity: 0.8;
+}
+
+.drop-down-filter,
+.number-of-submisions {
+  justify-content: space-between;
+  background: none;
+  border: solid 1px var(--filter-shade);
+  border-radius: 0.4rem;
+  padding: 0.4rem 1rem;
+  cursor: pointer;
+  margin-right: 2rem;
+}
+
+.drop-down-filter p {
+  color: var(--filter-shade);
+  margin-left: 0.9rem;
+  margin-right: 0.9rem;
+  font-weight: 500;
+}
+
+.drop-down-filter {
+  position: relative;
+  justify-content: center;
+  margin: 0rem;
+}
+
+.drop-down-filter-menu {
+  position: absolute;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 0.1rem;
+  top: 2rem;
+}
+
+.filter-choice {
+  color: var(--text-shade);
+  border: none;
+  background-color: var(--nav-backgroung-color);
+  cursor: pointer;
+  padding: 0.5rem 0rem;
+  width: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+}
+
+.filter-choice:hover,
+.drop-down-filter:hover {
+  opacity: 0.9;
+}
+
+.last-filter-option {
+  border-bottom-left-radius: 0.4rem;
+  border-bottom-right-radius: 0.4rem;
+}
+
+.drop-down-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 2rem;
+}
+
+.actual-submision-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 2rem;
+  row-gap: 1rem;
+  column-gap: 1rem;
+}
+
+.student-sub-template-left img {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  margin-right: 1rem;
+  object-fit: cover;
+}
+
+.student-sub-template {
+  background-color: var(--nav-backgroung-color);
+  border-radius: 0.3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem 1.2rem;
+}
+
+.student-sub-template-left {
+  display: flex;
+  align-items: center;
+}
+
+.student-sub-template-userName {
+  color: var(--alt-text-color);
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.student-sub-template-userStack {
+  color: var(--darker-page-text);
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+
+.student-sub-template-right a {
+  text-decoration: none;
+}
+
+.student-sub-template-right a button {
+  font-size: 1rem;
+  padding: 0.4rem 1rem;
+  border-radius: 0.4rem;
+}
+
+.student-submision-solution {
+  border: none;
+  background: none;
+  color: var(--call-to-action);
+  cursor: pointer;
+}
+
+.student-sub-template-grade-status {
+  border: none;
+  background-color: var(--call-to-action);
+  color: white;
+  cursor: pointer;
+  width: 6rem;
+}
+
+.student-submision-solution:hover,
+.student-sub-template-grade-status:hover {
+  opacity: 0.8;
+}
+
+.graded-user-sub {
+  border: solid 1px var(--alt-text-color);
+  background: none;
+  color: var(--alt-text-color);
+}
+
+@media (max-width: 716px) {
+  .tasks-reactions {
+    display: block;
+  }
+
+  .task-bottom-reactions {
+    margin-top: 1rem;
+  }
+
+  .submit-task-solution-btn {
+    padding: 0rem;
+  }
+
+  .assing-task-more-btn {
+    padding: 0.4rem 1rem;
+  }
+}
+
+@media (max-width: 370px) {
+  .task-page-header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .add-new-tasks {
+    position: relative;
+  }
+
+  .date-reaction {
+    display: none;
+  }
+}
+
+@media (max-width: 1149px) {
+  .student-sub-template-left img {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-right: 0.5rem;
+  }
+
+  .student-sub-template-right a button {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  .student-sub-template-grade-status {
+    width: 4rem;
+  }
+}
+
+@media (max-width: 1004px) {
+  .actual-submision-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 521px) {
+  .submision-table-header {
+    justify-content: space-between;
+    padding: 0rem;
+  }
+
+  .drop-down-holder {
+    padding: 0rem;
+  }
+
+  .submision-table-header button,
+  .number-of-submisions,
+  .drop-down-holder,
+  .drop-down-filter {
+    margin: 0rem;
+  }
+}
+
+@media (max-width: 389px) {
+  .student-sub-template-userName {
+    font-size: 0.9rem;
+  }
+
+  .student-sub-template-userStack {
+    font-size: 0.7rem;
+  }
+
+  .student-sub-template-right a button {
+    font-size: 0.7rem;
+    padding: 0.4rem 0.6rem;
+  }
+
+  .student-sub-template-grade-status {
+    width: 3rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .student-sub-template-right {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (max-width: 356px) {
+  .submision-table-header {
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+
+  .submision-table-header button {
+    margin-bottom: 0.5rem;
+  }
+}
+
+.hide-task {
+  display: none;
+}

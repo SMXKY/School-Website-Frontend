@@ -1,0 +1,114 @@
+.stack-task-progress-bar {
+  margin-top: -3rem;
+}
+
+.stack-task-content-title,
+.assing-to-form-link-title {
+  font-weight: 600;
+  font-size: 2rem;
+  margin-top: 1rem;
+  color: var(--cream-white-text);
+  cursor: default;
+}
+
+.stack-task-text-and-function {
+  margin-top: 1rem;
+  background-color: var(--nav-backgroung-color);
+  padding: 2rem 1rem;
+  border-radius: 0.6rem;
+}
+
+.stack-task-text-and-function-description {
+  font-weight: 300;
+  font-size: 1.1rem;
+  color: var(--cream-white-text);
+}
+
+.stack-task-text-and-function-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.stack-task-text-and-function-footer-left {
+  display: flex;
+  align-items: center;
+  cursor: default;
+}
+
+.stack-task-text-and-function-footer-left img {
+  margin-right: 0.5rem;
+  height: 1.4rem;
+  width: 1.4rem;
+}
+
+.stack-task-text-and-function-footer-left p {
+  color: var(--cream-white-text);
+  font-size: 0.7rem;
+}
+
+.stack-task-text-and-function-footer-btn {
+  border: none;
+  cursor: pointer;
+  background-color: var(--call-to-action);
+  padding: 0.4rem 1.8rem;
+  border-radius: 0.3rem;
+}
+
+.stack-task-text-and-function-footer-btn:hover {
+  opacity: 0.8;
+}
+
+.assing-to-form-link-title {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.stack-task-text-and-function-footer-left {
+  cursor: pointer;
+}
+
+.stack-task-text-and-function-footer-left:hover {
+  opacity: 0.8;
+}
+
+.specific-module-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.specific-module-head-left {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.specific-module-head-left button {
+  display: flex;
+  align-items: center;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.specific-module-head-left button:hover {
+  opacity: 0.8;
+}
+
+.specific-module-head-left p {
+  font-size: 0.8rem;
+  color: var(--cream-white-text);
+}
+
+.specific-module-head-left button img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+@media (max-width: 381px) {
+  .stack-task-content-title {
+    font-size: 1.5rem;
+  }
+}

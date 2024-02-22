@@ -1,0 +1,156 @@
+.swicth-task-oparation {
+  display: flex;
+}
+
+.grade-task-page-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 4rem;
+  margin-top: 2rem;
+}
+
+.grade-task-section-head {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: var(--cream-white-text);
+}
+
+.grade-task-section-description {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: var(--darker-page-text);
+}
+
+.grade-task-section-btns {
+  display: flex;
+  margin-top: 1.5rem;
+  align-items: center;
+}
+
+.grade-task-section-btns a button,
+.submision-date-grade-task {
+  border: none;
+  box-shadow: 0px 0px 2px rgba(12, 140, 233, 0.4);
+  color: white;
+  background-color: var(--body-color);
+  cursor: pointer;
+  padding: 0.4rem 1.2rem;
+  border-radius: 0.5rem;
+  border-bottom: solid 2px var(--call-to-action);
+}
+
+.grade-task-section-btns a button:hover {
+  opacity: 0.8;
+}
+
+.submision-date-grade-task img {
+  margin-right: 0.6rem;
+}
+
+.submision-date-grade-task p {
+  font-size: 0.7rem;
+  color: var(--cream-white-text);
+}
+
+.submision-date-grade-task {
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 0px 2px rgba(12, 140, 233, 0);
+  border: none;
+}
+
+.enter-grade,
+.enter-comment {
+  margin-top: 2rem;
+  font-weight: 500;
+}
+
+.enter-grade input {
+  background-color: var(--nav-backgroung-color);
+  border: none;
+  width: 5.5rem;
+  padding: 0.4rem;
+  margin-top: 0.5rem;
+  border-radius: 0.4rem;
+  border-bottom: solid 3px var(--call-to-action);
+}
+
+.enter-grade input:focus,
+.enter-comment textarea:focus {
+  outline: none;
+}
+
+.enter-grade input::placeholder {
+  color: var(--darker-page-text);
+}
+
+.enter-comment {
+  margin-top: 1rem;
+}
+
+.enter-comment textarea {
+  background-color: var(--nav-backgroung-color);
+  border: none;
+  border-bottom: solid 3px var(--call-to-action);
+  padding: 0.4rem;
+  width: 100%;
+  margin-top: 0.5rem;
+  border-radius: 0.4rem;
+  height: 8rem;
+}
+
+.submit-the-grade {
+  display: flex;
+  justify-content: end;
+  margin-top: 0.5rem;
+}
+
+.submit-the-grade button {
+  border: none;
+  background-color: var(--call-to-action);
+  cursor: pointer;
+  padding: 0.3rem 1.2rem;
+  border-radius: 0.4rem;
+}
+
+.submit-the-grade button:hover {
+  opacity: 0.8;
+}
+
+.grade-task-section-btns {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 588px) {
+  .grade-task-section-btns {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 0.5rem;
+  }
+
+  .submision-date-grade-task {
+    padding: 0rem;
+    margin-top: 0.5rem;
+  }
+}
+
+@media (max-width: 441px) {
+  .grade-task-page-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .submit-graded-task {
+    margin-top: 2rem;
+  }
+
+  .grade-task-section-btns {
+    display: flex;
+  }
+
+  .submision-date-grade-task {
+    padding: 0.4rem 1.2rem;
+    margin-top: 0rem;
+  }
+}

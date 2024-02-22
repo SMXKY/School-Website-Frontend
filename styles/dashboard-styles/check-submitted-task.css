@@ -1,0 +1,72 @@
+.solution-link a button {
+  margin-right: 0rem;
+  display: flex;
+  align-items: center;
+  padding: 0rem;
+  background: none;
+}
+
+.review-box {
+  padding: 3rem 3rem;
+}
+
+.review-comment {
+  margin-top: 1rem;
+  font-weight: bolder;
+  width: 40vw;
+}
+
+@media (max-width: 853px) {
+  .task-review-header {
+    display: block;
+  }
+
+  .task-review {
+    justify-content: start;
+    margin-top: 1rem;
+  }
+
+  .review-comment {
+    width: 70vw;
+  }
+
+  .review-box {
+    padding: 2rem 2rem;
+  }
+}
+
+@media (max-width: 370px) {
+  .task-page-header {
+    justify-content: start;
+    align-items: start;
+  }
+
+  .review-box {
+    padding: 1.5rem 1.5rem;
+  }
+}
+
+@media (max-width: 485px) {
+  /* .tasks-reactions {
+    display: block;
+  }
+
+  .solution-link {
+    margin-top: 1rem;
+  }*/
+
+  .solution-link a button {
+    border: solid 1px var(--call-to-action);
+    padding: 0.4rem 1rem;
+  }
+}
+
+@media (max-width: 553px) {
+  .task-review {
+    justify-content: space-between;
+  }
+
+  .task-reaction-date {
+    display: none;
+  }
+}
